@@ -1,0 +1,19 @@
+/*flash warning*/
+.flex {
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
+.flex-item {
+	flex: 1;
+}
+.ani-flash-warning {
+    animation: flash-warning 1s ease-in 3 backwards;
+    transform: .3s ease;
+}
+
+@keyframes flash-warning {
+    from {background-color: #fff;}
+    to {background-color: #fff7d9;}
+}
