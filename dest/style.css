@@ -1,37 +1,44 @@
-/*flash warning*/
-.flex {
+.box-wrap {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
-	    -ms-flex-direction:column;
-	        flex-direction:column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+}
+.box {
+	width: 50px;
+	height: 30px;
+	background-color: #ccc;
+	margin: 4px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-}
-.flex-item {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
-}
-.ani-flash-warning {
-    -webkit-animation: flash-warning 1s ease-in 3 backwards;
-            animation: flash-warning 1s ease-in 3 backwards;
-    -webkit-transform: .3s ease;
-            transform: .3s ease;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-animation: tip-pop .3s .1s ease both;
+	        animation: tip-pop .3s .1s ease both;
 }
 
-@-webkit-keyframes flash-warning {
-    from {background-color: #fff;}
-    to {background-color: #fff7d9;}
+@-webkit-keyframes tip-pop {
+	from {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
 }
 
-@keyframes flash-warning {
-    from {background-color: #fff;}
-    to {background-color: #fff7d9;}
+@keyframes tip-pop {
+	from {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
 }
