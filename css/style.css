@@ -1,5 +1,7 @@
 .box-wrap {
 	display: flex;
+	will-change: transform;
+	transition: .3s ease;
 }
 .box {
 	width: 50px;
@@ -9,28 +11,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	-webkit-animation: tip-pop .3s .3s ease both;
-	        animation: tip-pop .3s .3s ease both;
-}
-
-@-webkit-keyframes tip-pop {
-	from {
-		-webkit-transform: scale(0);
-		        transform: scale(0);
-	}
-	to {
-		-webkit-transform: scale(1);
-		        transform: scale(1);
-	}
+	animation: tip-pop .3s .3s ease both;
 }
 
 @keyframes tip-pop {
 	from {
-		-webkit-transform: scale(0);
-		        transform: scale(0);
+		transform: scale(0);
 	}
 	to {
-		-webkit-transform: scale(1);
-		        transform: scale(1);
+		transform: scale(1);
 	}
 }

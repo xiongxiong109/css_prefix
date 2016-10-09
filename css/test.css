@@ -1,0 +1,10 @@
+.box {
+	float: left;
+	box-shadow: 1px 1px 2px #ddd;
+	background-color: transparent;
+	filter: blur(3px);
+	display: flex;
+}
+#item {
+	width: 300px;
+}

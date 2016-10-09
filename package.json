@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "async": "^2.0.1",
-    "autoprefixer": "^6.5.0"
+    "autoprefixer": "^6.5.0",
+    "lodash": "^4.16.4"
   }
 }
